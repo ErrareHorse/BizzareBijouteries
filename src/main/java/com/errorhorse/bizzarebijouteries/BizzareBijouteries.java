@@ -68,6 +68,10 @@ public class BizzareBijouteries {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
                 event.accept(ModItems.BLACKSTONEMIRROR);
         }
+
+        if (event.getTabKey() == CreativeModeTabs .FUNCTIONAL_BLOCKS) {
+            event.accept(ModBlocks.BARREL_OF_BOATS);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
