@@ -1,5 +1,7 @@
 package com.errorhorse.bizzarebijouteries;
 
+import ModBlocks.ModBlocks;
+import ModItems.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -36,8 +38,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(BizzareBijouteries.MODID)
-public class BizzareBijouteries
-{
+public class BizzareBijouteries {
     public static final String MODID = "bizzarebijouteries";
     private static final Logger LOGGER = LogUtils.getLogger();
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -48,6 +49,9 @@ public class BizzareBijouteries
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -61,7 +65,9 @@ public class BizzareBijouteries
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+                event.accept(ModItems.BLACKSTONEMIRROR);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
