@@ -1,7 +1,7 @@
 {
   "parent": "block/orientable",
   "textures": {
-    "top": "bizzarebijouteries:bobtop",
+    "top": "bizzarebijouteries:bobopen",
     "bottom": "bizzarebijouteries:bobbottom",
     "side": "bizzarebijouteries:bobside"
   }

@@ -1,0 +1,320 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:oak_boat",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:spruce_boat",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:birch_boat",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:jungle_boat",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:acacia_boat",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dark_oak_boat",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:mangrove_boat",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cherry_boat",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bamboo_raft",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:oak_chest_boat",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:spruce_chest_boat",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:birch_chest_boat",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:jungle_chest_boat",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:acacia_chest_boat",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dark_oak_chest_boat",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:mangrove_chest_boat",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cherry_chest_boat",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bamboo_chest_raft",
+          "weight": 2
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.33
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dark_oak_boat",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Unsinkable Ebony",
+                "color": "#613583"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "The enchantments on this hull seem redundant..."
+                }
+              ],
+              "mode": "insert"
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": [
+                "minecraft:unbreaking"
+              ],
+              "only_compatible": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mangrove_boat",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Invincible",
+                "color": "#1a5fb4"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Why can you see it?"
+                }
+              ],
+              "mode": "insert"
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": [
+                "minecraft:feather_falling"
+              ],
+              "only_compatible": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:jungle_boat",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Theseus",
+                "color": "#986a44"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Sticks and planks may break from my flanks but that's what nails are for."
+                }
+              ],
+              "mode": "insert"
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": [
+                "minecraft:mending"
+              ],
+              "only_compatible": false
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.05
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "weight": 100,
+          "functions": []
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "weight": 5,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Faithful Fly",
+                "color": "#57e389",
+                "italic": true
+              }
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "minecraft:mending"
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "minecraft:unbreaking"
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "minecraft:lure"
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "minecraft:luck_of_the_sea"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:enchantments": false
+              }
+            }
+          ],
+          "conditions": []
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "weight": 5,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Covetous Reel",
+                "color": "#f6d32d",
+                "italic": true
+              }
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "minecraft:luck_of_the_sea"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:enchantments": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "weight": 5,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Hungry Hook",
+                "color": "#c01c28",
+                "italic": true
+              }
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "minecraft:lure"
+            },
+            {
+              "function": "minecraft:toggle_tooltips",
+              "toggles": {
+                "minecraft:enchantments": false
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.05
+        }
+      ]
+    }
+  ]
+}

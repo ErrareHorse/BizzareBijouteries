@@ -1,7 +1,17 @@
 {
   "variants": {
-    "": {
-      "model": "bizzarebijouteries:block/barrel_of_boats"
-    }
+    "facing=north,open=false":  { "model": "bizzarebijouteries:barrel_of_boats", "y": 180 },
+    "facing=south,open=false":  { "model": "bizzarebijouteries:barrel_of_boats" },
+    "facing=west,open=false":   { "model": "bizzarebijouteries:barrel_of_boats", "y": 270 },
+    "facing=east,open=false":   { "model": "bizzarebijouteries:barrel_of_boats", "y": 90 },
+    "facing=up,open=false":     { "model": "bizzarebijouteries:barrel_of_boats_top" },
+    "facing=down,open=false":   { "model": "bizzarebijouteries:barrel_of_boats_bottom" },
+
+    "facing=north,open=true":   { "model": "bizzarebijouteries:bob_open", "y": 180 },
+    "facing=south,open=true":   { "model": "bizzarebijouteries:bob_open" },
+    "facing=west,open=true":    { "model": "bizzarebijouteries:bob_open", "y": 270 },
+    "facing=east,open=true":    { "model": "bizzarebijouteries:bob_open", "y": 90 },
+    "facing=up,open=true":      { "model": "bizzarebijouteries:bob_open_top" },
+    "facing=down,open=true":    { "model": "bizzarebijouteries:bob_open_bottom" }
   }
 }

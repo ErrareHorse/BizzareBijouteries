@@ -1,4 +1,4 @@
-package ModItems;
+package com.errorhorse.bizzarebijouteries.items;
 
 import com.errorhorse.bizzarebijouteries.BizzareBijouteries;
 import net.minecraft.world.item.Item;
